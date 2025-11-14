@@ -1,3 +1,4 @@
+
 :root {
     --primary: #1a5d1a;
     --secondary: #2b8a3e;
@@ -26,77 +27,127 @@ nav .container { display: flex; justify-content: space-between; align-items: cen
 .nav-links a { color: white; text-decoration: none; font-weight: 500; }
 .nav-links a:hover, .nav-links a:focus { color: #a8e6a8; outline: 2px solid white; }
 
-.hero-logo {
-    width: 120px;
-    height: auto;
-    margin-bottom: 1.5rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: system-ui, sans-serif; }
+
+.container { max-width: 1100px; margin: 0 auto; padding: 0 1rem; }
+
+/* HERO */
+.hero {
+  position: relative;
+  height: 80vh; /* Réduit */
+  min-height: 500px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Texte en bas */
+  background: #0a3d0a; /* Fond vert si logo transparent */
 }
 
-.hero {
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/IMG_4876.jpg') center/cover no-repeat;
-    color: white;
-    text-align: center;
-    padding: 160px 1rem 100px;
-}
-.hero {
-    position: relative;
-    height: 100vh;
-    min-height: 600px;
-    background: url('/images/Logo.jpg') center center / contain no-repeat;
-    background-color: #f0f0f0; /* Fond gris clair si logo transparent */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    overflow: hidden;
-}
-
+/* OVERLAY SOMBRE */
 .hero-overlay {
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(0, 0, 0, 0.55); /* Overlay sombre pour lisibilité */
-    z-index: 1;
+  position: absolute;
+  inset: 0;
+ /* background: rgba(0, 0, 0, 0.45);*/
+  z-index: 1;
 }
 
+/* LOGO FULL WIDTH */
+.hero-logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+ /* object-fit: contain; */
+  object-position: top center;
+  z-index: 0;
+  max-height: 80vh; /* Limite hauteur logo */
+}
+
+/* TEXTE EN DESSOUS */
 .hero-content {
-    position: relative;
-    z-index: 2;
-    color: white;
-    max-width: 800px;
-    padding: 2rem;
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem 3rem;
+  background: rgba(10, 61, 10, 0.7); /* Fond semi-transparent */
+  border-radius: 12px 12px 0 0;
+  margin: 0 1rem;
+  max-width: 900px;
+  max-height: 250px;
+  align-self: center;
 }
 
 .hero h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+  margin-bottom: 0.8rem;
 }
 
 .hero p {
-    font-size: 1.3rem;
-    margin-bottom: 2rem;
-    text-shadow: 0 1px 5px rgba(0,0,0,0.5);
+  font-size: 1.25rem;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+  margin-bottom: 1.5rem;
 }
 
 .btn {
-    background: var(--secondary);
-    color: white;
-    padding: 1rem 2.5rem;
-    border-radius: 50px;
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 1px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-    transition: all 0.3s ease;
+  display: inline-block;
+  background: linear-gradient(45deg, #ffcc29, #ffd700);
+  color: #0a3d0a;
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  text-decoration: none;
+  box-shadow: 0 5px 15px rgba(255,204,41,0.4);
+  transition: all 0.3s ease;
 }
 
-.btn:hover, .btn:focus {
-    background: white;
-    color: var(--primary);
-    transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+.btn:hover {
+  background: white;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(255,204,41,0.6);
+}
+
+/* FOOTER */
+.legal {
+  background: #0a3d0a;
+  color: white;
+  text-align: center;
+  padding: 1.8rem 1rem;
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+.inpi-link {
+  color: #ffcc29;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.inpi-link:hover {
+  color: white;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .hero { 
+    height: 70vh;
+  }
+  .hero-logo {
+    max-height: 50vh;
+  }
+  .hero h1 { font-size: 2rem; }
+  .hero p { font-size: 1.1rem; }
+  .hero-content { 
+    padding: 1.5rem 1rem 2.5rem;
+    margin: 0 0.5rem;
+  }
 }
 
 /* Responsive */

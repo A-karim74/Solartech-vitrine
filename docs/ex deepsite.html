@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <base target="_self">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ÉcoChauffage | Installation pompes à chaleur & Maintenance solaire</title>
+    <meta name="description" content="Expert en installation de pompes à chaleur et maintenance d'installations solaires. Solutions écologiques pour votre chauffage.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#1e3a8a",
+                        secondary: "#0ea5e9",
+                        accent: "#10b981"
+                    },
+                    fontFamily: {
+                        sans: ['"Open Sans"', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="font-sans text-gray-800">
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="https://picsum.photos/50?random=1" alt="Logo ÉcoChauffage" class="h-10 mr-3">
+                <span class="text-xl font-bold text-primary">ÉcoChauffage</span>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#accueil" class="font-medium hover:text-secondary transition">Accueil</a>
+                <a href="#services" class="font-medium hover:text-secondary transition">Services</a>
+                <a href="#avantages" class="font-medium hover:text-secondary transition">Avantages</a>
+                <a href="#realisations" class="font-medium hover:text-secondary transition">Réalisations</a>
+                <a href="#contact" class="font-medium hover:text-secondary transition">Contact</a>
+            </div>
+            <button class="md:hidden text-primary">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="accueil" class="bg-gradient-to-r from-primary to-secondary text-white py-20">
+            <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6">Solutions de chauffage écologique</h1>
+                    <p class="text-xl mb-8">Professionnels de l'installation de pompes à chaleur et de la maintenance d'installations solaires depuis 15 ans.</p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button class="bg-accent hover:bg-green-600 text-white font-bold py-3 px-6 rounded-lg transition shadow-lg">Demander un devis</button>
+                        <button class="bg-white hover:bg-gray-100 text-primary font-bold py-3 px-6 rounded-lg transition shadow-lg">Nos réalisations</button>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://picsum.photos/600/400?random=2" alt="Technicien installant une pompe à chaleur" class="rounded-lg shadow-xl" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-4 text-primary">Nos Services</h2>
+                <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12">Des solutions complètes pour vos besoins en énergie renouvelable</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Service 1 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                        <div class="text-secondary text-4xl mb-4">
+                            <i class="fas fa-fire"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Installation de pompes à chaleur</h3>
+                        <p class="text-gray-600">Installation professionnelle de pompes à chaleur air/eau, géothermiques et hybrides pour un chauffage économique et écologique.</p>
+                    </div>
+                    
+                    <!-- Service 2 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                        <div class="text-secondary text-4xl mb-4">
+                            <i class="fas fa-solar-panel"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Maintenance solaire</h3>
+                        <p class="text-gray-600">Entretien et dépannage de vos installations solaires thermiques et photovoltaïques pour garantir leur performance optimale.</p>
+                    </div>
+                    
+                    <!-- Service 3 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                        <div class="text-secondary text-4xl mb-4">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Audit énergétique</h3>
+                        <p class="text-gray-600">Bilan complet de votre consommation énergétique et recommandations personnalisées pour améliorer l'efficacité de votre habitat.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Avantages Section -->
+        <section id="avantages" class="py-20">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-4 text-primary">Pourquoi choisir ÉcoChauffage ?</h2>
+                <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12">15 ans d'expertise au service de votre confort</p>
+                
+                <div class="flex flex-col md:flex-row gap-8">
+                    <div class="md:w-1/2">
+                        <img src="https://picsum.photos/600/400?random=3" alt="Technicien en intervention" class="rounded-lg shadow-md w-full" loading="lazy">
+                    </div>
+                    <div class="md:w-1/2">
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="bg-secondary rounded-full p-2 mr-4">
+                                    <i class="fas fa-check text-white"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-lg mb-1">Professionnels certifiés</h3>
+                                    <p class="text-gray-600">Nos techniciens sont qualifiés RGE (Reconnu Garant de l'Environnement) pour des installations conformes aux normes.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-secondary rounded-full p-2 mr-4">
+                                    <i class="fas fa-check text-white"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-lg mb-1">Service personnalisé</h3>
+                                    <p class="text-gray-600">Étude de votre projet et solution sur mesure adaptée à vos besoins et à votre budget.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-secondary rounded-full p-2 mr-4">
+                                    <i class="fas fa-check text-white"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-lg mb-1">Disponibilité 7j/7</h3>
+                                    <p class="text-gray-600">Service d'urgence disponible pour les dépannages et interventions rapides.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-secondary rounded-full p-2 mr-4">
+                                    <i class="fas fa-check text-white"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-lg mb-1">Financement et aides</h3>
+                                    <p class="text-gray-600">Accompagnement pour bénéficier des aides financières (MaPrimeRénov', CEE, éco-PTZ).</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Réalisations Section -->
+        <section id="realisations" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-4 text-primary">Nos Réalisations</h2>
+                <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12">Découvrez nos derniers projets d'installation</p>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Projet 1 -->
+                    <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                        <img src="https://picsum.photos/600/400?random=4" alt="Installation pompe à chaleur" class="w-full h-48 object-cover" loading="lazy">
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl mb-2">Maison individuelle à Lyon</h3>
+                            <p class="text-gray-600 mb-4">Installation d'une pompe à chaleur air/eau pour une maison de 120m² avec ballon thermodynamique.</p>
+                            <div class="flex justify-between text-sm text-gray-500">
+                                <span><i class="fas fa-calendar-alt mr-1"></i> Mars 2023</span>
+                                <span><i class="fas fa-euro-sign mr-1"></i> 30% d'économie</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Projet 2 -->
+                    <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                        <img src="https://picsum.photos/600/400?random=5" alt="Installation panneaux solaires" class="w-full h-48 object-cover" loading="lazy">
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl mb-2">Résidence à Bordeaux</h3>
+                            <p class="text-gray-600 mb-4">Maintenance complète d'une installation solaire photovoltaïque de 12kWc avec remplacement d'onduleur.</p>
+                            <div class="flex justify-between text-sm text-gray-500">
+                                <span><i class="fas fa-calendar-alt mr-1"></i> Janvier 2023</span>
+                                <span><i class="fas fa-euro-sign mr-1"></i> +25% rendement</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Projet 3 -->
+                    <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                        <img src="https://picsum.photos/600/400?random=6" alt="Installation géothermique" class="w-full h-48 object-cover" loading="lazy">
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl mb-2">Château à Nice</h3>
+                            <p class="text-gray-600 mb-4">Installation d'une pompe à chaleur géothermique avec plancher chauffant pour un domaine de 300m².</p>
+                            <div class="flex justify-between text-sm text-gray-500">
+                                <span><i class="fas fa-calendar-alt mr-1"></i> Novembre 2022</span>
+                                <span><i class="fas fa-euro-sign mr-1"></i> 50% d'économie</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-10">
+                    <button class="bg-primary hover:bg-blue-900 text-white font-bold py-3 px-6 rounded-lg transition shadow-lg">Voir toutes nos réalisations</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-primary text-white">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto">
+                    <h2 class="text-3xl font-bold text-center mb-4">Contactez-nous</h2>
+                    <p class="text-center mb-12 max-w-2xl mx-auto">Demandez un devis gratuit ou posez vos questions à notre équipe d'experts</p>
+                    
+                    <div class="bg-white rounded-lg shadow-xl overflow-hidden">
+                        <div class="md:flex">
+                            <div class="md:w-1/2 bg-secondary p-8">
+                                <h3 class="text-xl font-bold mb-6">Nos coordonnées</h3>
+                                
+                                <div class="space-y-4">
+                                    <div class="flex items-start">
+                                        <i class="fas fa-map-marker-alt mt-1 mr-3"></i>
+                                        <div>
+                                            <h4 class="font-bold">Adresse</h4>
+                                            <p>12 Rue des Énergies Vertes<br>75000 Paris</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="flex items-start">
+                                        <i class="fas fa-phone-alt mt-1 mr-3"></i>
+                                        <div>
+                                            <h4 class="font-bold">Téléphone</h4>
+                                            <p>01 23 45 67 89</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="flex items-start">
+                                        <i class="fas fa-envelope mt-1 mr-3"></i>
+                                        <div>
+                                            <h4 class="font-bold">Email</h4>
+                                            <p>contact@ecochauffage.fr</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="flex items-start">
+                                        <i class="fas fa-clock mt-1 mr-3"></i>
+                                        <div>
+                                            <h4 class="font-bold">Horaires</h4>
+                                            <p>Lun-Ven: 8h-19h<br>Sam: 9h-13h</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="mt-8">
+                                    <h3 class="text-xl font-bold mb-4">Suivez-nous</h3>
+                                    <div class="flex space-x-4">
+                                        <a href="#" class="bg-white text-secondary rounded-full w-10 h-10 flex items-center justify-center hover:bg-gray-100 transition">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                        <a href="#" class="bg-white text-secondary rounded-full w-10 h-10 flex items-center justify-center hover:bg-gray-100 transition">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                        <a href="#" class="bg-white text-secondary rounded-full w-10 h-10 flex items-center justify-center hover:bg-gray-100 transition">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="md:w-1/2 p-8 text-gray-800">
+                                <form>
+                                    <div class="mb-4">
+                                        <label for="name" class="block font-bold mb-2">Nom complet</label>
+                                        <input type="text" id="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary">
+                                    </div>
+                                    
+                                    <div class="mb-4">
+                                        <label for="email" class="block font-bold mb-2">Email</label>
+                                        <input type="email" id="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary">
+                                    </div>
+                                    
+                                    <div class="mb-4">
+                                        <label for="phone" class="block font-bold mb-2">Téléphone</label>
+                                        <input type="tel" id="phone" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary">
+                                    </div>
+                                    
+                                    <div class="mb-4">
+                                        <label for="service" class="block font-bold mb-2">Service concerné</label>
+                                        <select id="service" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary">
+                                            <option value="">Sélectionnez un service</option>
+                                            <option value="pompe">Pompe à chaleur</option>
+                                            <option value="solaire">Énergie solaire</option>
+                                            <option value="audit">Audit énergétique</option>
+                                            <option value="autre">Autre demande</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <div class="mb-4">
+                                        <label for="message" class="block font-bold mb-2">Message</label>
+                                        <textarea id="message" rows="4" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary"></textarea>
+                                    </div>
+                                    
+                                    <button type="submit" class="w-full bg-accent hover:bg-green-600 text-white font-bold py-3 px-4 rounded-lg transition">Envoyer la demande</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">ÉcoChauffage</h3>
+                    <p class="mb-4">Experts en solutions de chauffage écologique et énergies renouvelables depuis 2008.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Pompes à chaleur</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Énergie solaire</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Audit énergétique</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Maintenance</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Dépannage</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Liens utiles</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Aides financières</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">FAQ</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Blog</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Mentions légales</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">CGV</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Newsletter</h3>
+                    <p class="mb-4 text-gray-400">Abonnez-vous pour recevoir nos conseils et offres spéciales.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Votre email" class="px-4 py-2 rounded-l-lg w-full text-gray-800 focus:outline-none">
+                        <button type="submit" class="bg-secondary hover:bg-blue-600 px-4 py-2 rounded-r-lg">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>© 2023 ÉcoChauffage. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Navigation smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Mobile menu toggle (would need implementation)
+        const mobileMenuButton = document.querySelector('button.md\\:hidden');
+        mobileMenuButton.addEventListener('click', () => {
+            alert("Menu mobile à implémenter");
+        });
+
+        // Form submission
+        const contactForm = document.querySelector('form');
+        if(contactForm) {
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                alert("Merci pour votre message ! Nous vous contacterons rapidement.");
+                contactForm.reset();
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <base target="_self">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maintenance Chauffe Eau Solaire Clipsol | Expert Spécialisé</title>
+    <meta name="description" content="Société spécialisée dans la maintenance et l'entretien de chauffe-eau solaires thermiques de la marque Clipsol. Intervention rapide, dépannage et entretien préventif.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#1e40af",
+                        secondary: "#0ea5e9",
+                        accent: "#f59e0b"
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="min-h-screen bg-white">
+    <!-- Header -->
+    <header class="bg-white shadow-lg sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-sun text-yellow-500 text-2xl"></i>
+                    <span class="text-xl font-bold text-primary">Clipsol Maintenance</span>
+                </div>
+                
+                <div class="hidden md:flex space-x-8">
+                    <a href="#accueil" class="text-gray-700 hover:text-primary font-medium transition-colors">Accueil</a>
+                    <a href="#services" class="text-gray-700 hover:text-primary font-medium transition-colors">Services</a>
+                    <a href="#clipsol" class="text-gray-700 hover:text-primary font-medium transition-colors">Clipsol</a>
+                    <a href="#contact" class="text-gray-700 hover:text-primary font-medium transition-colors">Contact</a>
+                </div>
+                
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="text-gray-700">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-4">
+                <a href="#accueil" class="block text-gray-700 hover:text-primary">Accueil</a>
+                <a href="#services" class="block text-gray-700 hover:text-primary">Services</a>
+                <a href="#clipsol" class="block text-gray-700 hover:text-primary">Clipsol</a>
+                <a href="#contact" class="block text-gray-700 hover:text-primary">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="bg-gradient-to-r from-blue-50 to-cyan-50 py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h1 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+                        Maintenance Spécialisée
+                        <span class="text-primary">Chauffe-Eau Solaire Clipsol</span>
+                    </h1>
+                    <p class="text-lg text-gray-600 mb-8">
+                        Expert en maintenance, dépannage et entretien des systèmes solaires thermiques Clipsol. 
+                        Intervention rapide sur toute la France.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button class="bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+                            Demander un devis
+                        </button>
+                        <button class="border border-primary text-primary px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors">
+                            <i class="fas fa-phone mr-2"></i>
+                            01 23 45 67 89
+                        </button>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img 
+                        src="https://picsum.photos/600/400?random=1" 
+                        alt="Installation chauffe-eau solaire Clipsol professionnelle" 
+                        class="rounded-lg shadow-xl"
+                        loading="lazy"
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Nos Services Spécialisés</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-tools text-primary text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Dépannage Urgent</h3>
+                    <p class="text-gray-600">
+                        Intervention rapide pour tous types de pannes sur vos systèmes Clipsol. 
+                        Diagnostic précis et réparation garantie.
+                    </p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
+                    <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-calendar-check text-green-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Entretien Préventif</h3>
+                    <p class="text-gray-600">
+                        Contrats d'entretien annuel pour optimiser les performances et prolonger 
+                        la durée de vie de votre installation.
+                    </p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
+                    <div class="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-cogs text-yellow-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Maintenance Curative</h3>
+                    <p class="text-gray-600">
+                        Réparation complète des composants défectueux : capteurs, régulateurs, 
+                        circulateurs et échangeurs thermiques.
+                    </p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
+                    <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-flask text-purple-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Contrôle Performance</h3>
+                    <p class="text-gray-600">
+                        Analyse complète du rendement énergétique et optimisation des réglages 
+                        pour maximiser vos économies.
+                    </p>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
+                    <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-shield-alt text-red-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Garantie Pièces</h3>
+                    <p class="text-gray-600">
+                        Utilisation exclusive de pièces détachées Clipsol garanties 2 ans. 
+                        Conformité aux normes en vigueur.
+                    </p>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
+                    <div class="w-12 h-12 bg-cyan-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-headset text-cyan-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Assistance Technique</h3>
+                    <p class="text-gray-600">
+                        Support technique permanent par téléphone. Conseils d'experts pour 
+                        l'utilisation optimale de votre installation.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clipsol Expertise Section -->
+    <section id="clipsol" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img 
+                        src="https://picsum.photos/500/400?random=2" 
+                        alt="Technicien expert Clipsol en intervention" 
+                        class="rounded-lg shadow-lg"
+                        loading="lazy"
+                    />
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6">Expertise Marque Clipsol</h2>
+                    <p class="text-gray-600 mb-6">
+                        Forts de notre expérience exclusive avec la marque Clipsol, nous maîtrisons 
+                        parfaitement toutes les gammes de chauffe-eau solaires thermiques :
+                    </p>
+                    
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span class="text-gray-700">Systèmes à circulation forcée</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span class="text-gray-700">Installations monobloc et split</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span class="text-gray-700">Régulateurs et automates</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span class="text-gray-700">Capteurs plans et tubulaires</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span class="text-gray-700">Ballons de stockage</span>
+                        </li>
+                    </ul>
+                    
+                    <div class="bg-blue-100 border-l-4 border-primary p-4">
+                        <p class="text-blue-800">
+                            <i class="fas fa-info-circle mr-2"></i>
+                            Seuls les techniciens certifiés Clipsol peuvent garantir 
+                            des interventions optimales sur vos équipements.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-primary text-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="text-3xl font-bold mb-6">Contactez-nous</h2>
+                    <p class="text-blue-100 mb-8">
+                        Un problème avec votre chauffe-eau solaire Clipsol ? 
+                        Notre équipe d'experts est à votre écoute.
+                    </p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-phone text-yellow-400 mr-4 text-xl"></i>
+                            <div>
+                                <p class="font-semibold">Téléphone</p>
+                                <p class="text-blue-100">01 23 45 67 89</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope text-yellow-400 mr-4 text-xl"></i>
+                            <div>
+                                <p class="font-semibold">Email</p>
+                                <p class="text-blue-100">contact@clipsol-maintenance.fr</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <i class="fas fa-map-marker-alt text-yellow-400 mr-4 text-xl"></i>
+                            <div>
+                                <p class="font-semibold">Adresse</p>
+                                <p class="text-blue-100">123 Avenue du Soleil, 75000 Paris</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg p-8 shadow-lg">
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Nom complet</label>
+                            <input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Votre nom">
+                        </div>
+                        
+                        <div>
+                            <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">Téléphone</label>
+                            <input type="tel" id="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Votre téléphone">
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Votre email">
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Décrivez votre problème..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-primary text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+                                Envoyer la demande
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-sun text-yellow-500 text-xl"></i>
+                        <span class="text-xl font-bold">Clipsol Maintenance</span>
+                    </div>
+                    <p class="text-gray-400">
+                        Expert en maintenance et dépannage de chauffe-eau solaires thermiques Clipsol. 
+                        Service technique certifié.
+                    </p>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Liens rapides</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#accueil" class="hover:text-white transition-colors">Accueil</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Services</a></li>
+                        <li><a href="#clipsol" class="hover:text-white transition-colors">Expertise Clipsol</a></li>
+                        <li><a href="#contact" class="hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Horaires</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Lun - Ven: 8h00 - 18h00</li>
+                        <li>Sam: 9h00 - 12h00</li>
+                        <li>Urgences: 7j/7</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Clipsol Maintenance. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuToggle = document.getElementById("menu-toggle");
+        const mobileMenu = document.getElementById("mobile-menu");
+        
+        menuToggle.addEventListener("click", function() {
+            mobileMenu.classList.toggle("hidden");
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll("a[href^="#"]").forEach(anchor => {
+            anchor.addEventListener("click", function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute("href"));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: "smooth",
+                        block: "start"
+                    });
+                }
+            });
+        });
+
+        // Form submission handling
+        const contactForm = document.querySelector("form");
+        contactForm.addEventListener("submit", function(e) {
+            e.preventDefault();
+            alert("Votre demande a été envoyée avec succès ! Nous vous recontacterons rapidement.");
+            this.reset();
+        });
+
+        // Define services data
+        const services = [
+            {
+                "id": 1,
+                "title": "Dépannage Urgent",
+                "description": "Intervention rapide pour tous types de pannes sur vos systèmes Clipsol."
+            },
+            {
+                "id": 2,
+                "title": "Entretien Préventif",
+                "description": "Contrats d'entretien annuel pour optimiser les performances."
+            },
+            {
+                "id": 3,
+                "title": "Maintenance Curative",
+                "description": "Réparation complète des composants défectueux."
+            },
+            {
+                "id": 4,
+                "title": "Contrôle Performance",
+                "description": "Analyse complète du rendement énergétique."
+            },
+            {
+                "id": 5,
+                "title": "Garantie Pièces",
+                "description": "Utilisation exclusive de pièces détachées Clipsol garanties."
+            },
+            {
+                "id": 6,
+                "title": "Assistance Technique",
+                "description": "Support technique permanent par téléphone."
+            }
+        ];
+    </script>
+</body>
+</html>

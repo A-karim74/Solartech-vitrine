@@ -4,13 +4,13 @@
     --secondary: #2b8a3e;
     --text: #1a1a1a;
     --light: #f9f9f9;
-    --gray: #eee;
+     --gray:#727272 ;
     --orange:#C87A24;
     --Darkblue: #2D4F8E;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: system-ui, sans-serif; line-height: 1.6; color: var(--text); background: var(--light); }
+body { font-family: system-ui, sans-serif; line-height: 1.6; color: var(--text);/* background: var(--light)*/; }
 
 .container { max-width: 1100px; margin: 0 auto; padding: 0 1rem; }
 
@@ -68,7 +68,7 @@ body { font-family: system-ui, sans-serif; }
   inset: 0;
  /* background: rgba(0, 0, 0, 0.45);*/
  /*background: rgba(50, 50, 50, 0.35); /* Gris clair + transparence */
- background: rgba(70, 70, 70, 0.25); /* Gris très clair */
+/* background: rgba(70, 70, 70, 0.25); /* Gris très clair */
   z-index: 1;
 }
 
